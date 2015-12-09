@@ -1,0 +1,31 @@
+{
+  "name": "timeseries-stat",
+  "version": "0.0.1",
+  "description": "timeseries-stat",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "mongoose": "~4.x",
+    "moment": "~2.10.6",
+    "lodash":"^3.10.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cangzhen/timeseries-stat.git"
+  },
+  "keywords": [
+    "timeseries",
+    "autofit",
+    "mongoose"
+  ],
+  "author": {
+    "name": "cangzhen"
+  },
+  "license": "MIT"
+}
