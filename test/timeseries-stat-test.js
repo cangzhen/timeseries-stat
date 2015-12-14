@@ -83,15 +83,15 @@ function loadData(callback) {
  */
 var timeseriesTest = function(model)
 {
-    statUtils.statByTime(model, {unit: 'month', reduceFields: ['totalFee']}, function (err, results) {
-        console.info('no padding result\n', results);
+    statUtils.statByTime(model, {unit: 'month', reduceFields: ['totalFee'],autofit:false}, function (err, results) {
+        console.info('no autofit result\n', results);
     })
 
     statUtils.statByTime(model, {
         unit: 'month',
         reduceFields: ['totalFee']
     }, function (err, results) {
-        console.info('padding result\n', results);
+        console.info('autofit result\n', results);
     })
     statUtils.statByTime(model, {
         unit: 'day',
