@@ -5,13 +5,13 @@
 
 - model 数据模型，模型必须有时间字段
 - options
-    + timeFieldName 时间字段，默认是'createdAt'
-    + unit - 时间统计单位，可以按天、按小时、按月时、按月
-    + start - 开始时间开始时间
-    + end  - 结束时间结束时间
-    + query - 时间之外的查询条件查询条件
-    + reduceFields - {[String]}要累计的字段['totalFee'],默认统计count表示总数表示总数
-    + autofit -  {Boolean, default:false} 是否进行数据填充，某天，某月数据位空时，自动进行填充.行填充.
+    + timeFieldName {String}时间字段名称，默认是'createdAt'
+    + unit - {String}时间统计单位，为枚举值,{'year','month','day','hour','minute']
+    + start - {Date}开始时间
+    + end  - {Date}结束时间
+    + query - {Object}时间之外的查询条件
+    + reduceFields - {[String]}要累计的字段,如果为空，则进行count计算
+    + autofit -  {Boolean, default:false} 是否进行数据填充，当某个时间序点数值为空时，自动进行填充.
 
 
 **样例**
